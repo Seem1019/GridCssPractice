@@ -1,0 +1,96 @@
+body{
+    padding: 30px;
+    margin: 8px;
+}
+.brand-header {
+    grid-area: header;
+    text-align: center;
+    font-size: 30px;
+  }
+  .brand-header .brand{
+    font-weight: lighter;
+  }
+.nav-links{
+    grid-area: nav-header;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    border: 3px solid black;
+    margin: 0;
+    padding: 30px;
+
+}
+.nav-links li{
+    padding: 0px 20px;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+.section-link {
+    text-decoration: none;
+    color: #666;
+}
+.section-link:hover{
+    text-decoration: underline;
+}
+.article-title {
+    font-size: 30px;
+    text-align: center;
+    font-weight: normal;
+    font-style: italic;
+}
+.story{
+    justify-content: space-around;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+
+.story-1{
+    grid-area: art1;
+    padding: 10px;
+   
+}
+.story-2{
+    grid-area: art2;
+    padding: 10px;
+
+}
+.article-text{
+    text-align: left;
+}
+.article-img{
+    display: block;
+    margin: 0 auto;
+    max-height: 250px;
+}
+.story-3{
+    grid-area: art3;
+    border-right:  3px solid black;
+    padding: 10px;
+    
+}
+.story-4{
+    grid-area: art4;
+
+    padding: 10px;
+}
+.story-5{
+    grid-area: art5;
+    border-right:  3px solid black;
+    padding: 10px;
+}
+
+
+.page {
+    display: grid;
+    grid-template-areas:
+        "header      header      header      "
+      "nav-header  nav-header  nav-header "
+      "art1     art2   art3"
+      "art4      art5      art5   ";
+  }
+  .story{
+    border-style: solid 2px;
+  }
